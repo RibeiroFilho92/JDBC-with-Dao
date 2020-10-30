@@ -36,6 +36,11 @@ public class App {
 		sellerDao.insert(istdSeller);
 		System.out.println("New seller inserted: ID generated " + istdSeller.getID());
 		
+		System.out.println("Test fiver: alter seller data: ");
+		seller = sellerDao.findByID(1);
+		seller.setName("Marta");
+		sellerDao.update(seller);
+		System.out.println("Updated");
 	}
 
 }
