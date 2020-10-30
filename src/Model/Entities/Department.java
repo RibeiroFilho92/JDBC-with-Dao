@@ -9,6 +9,8 @@ public class Department implements Serializable {
 	private Integer ID;
 	private String name;
 	
+	public Department() {};
+	
 	public Department(int ID, String name) {
 		this.ID = ID;
 		this.name = name;
@@ -29,6 +31,7 @@ public class Department implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	//Implemented by Source
 	@Override
 	public int hashCode() {
