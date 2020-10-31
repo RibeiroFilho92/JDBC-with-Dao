@@ -11,7 +11,7 @@ public class Department implements Serializable {
 	
 	public Department() {};
 	
-	public Department(int ID, String name) {
+	public Department(Integer ID, String name) {
 		this.ID = ID;
 		this.name = name;
 	}
@@ -20,7 +20,7 @@ public class Department implements Serializable {
 		return this.ID;
 	}
 	
-	public void setID(int ID) {
+	public void setID(Integer ID) {
 		this.ID = ID;
 	}
 	
